@@ -1,6 +1,9 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-12 bg-card border-t border-border">
       <div className="container mx-auto px-6">
@@ -33,10 +36,10 @@ export function Footer() {
           </div>
 
           <p className="text-muted-foreground flex items-center gap-2">
-            Made with <Heart size={16} className="text-secondary fill-secondary" /> by Your Name
+            {t("footer.madeWith")} <Heart size={16} className="text-secondary fill-secondary" /> {t("footer.byName")}
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            © 2026 All rights reserved.
+            {t("footer.copyright")}
           </p>
         </div>
       </div>

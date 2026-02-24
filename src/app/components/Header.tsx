@@ -1,8 +1,10 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, language, setLanguage } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -12,43 +14,48 @@ export function Header() {
     }
   };
 
+  const toggleLanguage = () => {
+    setLanguage(language === "fa" ? "en" : "fa");
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Portfolio
+            {t("nav.brand")}
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("home")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Home
+              {t("nav.home")}
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Projects
+              {t("nav.projects")}
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              About
+              {t("nav.about")}
             </button>
+
             <button
-              onClick={() => scrollToSection("contact")}
-              className="px-6 py-2 bg-gradient-to-r from-primary to-secondary rounded-lg text-white hover:opacity-90 transition-opacity"
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-muted rounded-lg text-sm text-foreground hover:bg-primary hover:text-white transition-all"
+              title={language === "fa" ? "Switch to English" : "تغییر به فارسی"}
             >
-              Contact
+              <Globe size={16} />
+              {language === "fa" ? "EN" : "فا"}
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -57,32 +64,33 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 flex flex-col gap-4 pb-4">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-foreground hover:text-primary transition-colors text-left"
+              className="text-foreground hover:text-primary transition-colors text-start"
             >
-              Home
+              {t("nav.home")}
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="text-foreground hover:text-primary transition-colors text-left"
+              className="text-foreground hover:text-primary transition-colors text-start"
             >
-              Projects
+              {t("nav.projects")}
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-primary transition-colors text-left"
+              className="text-foreground hover:text-primary transition-colors text-start"
             >
-              About
+              {t("nav.about")}
             </button>
+
             <button
-              onClick={() => scrollToSection("contact")}
-              className="px-6 py-2 bg-gradient-to-r from-primary to-secondary rounded-lg text-white hover:opacity-90 transition-opacity text-left"
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-muted rounded-lg text-sm text-foreground hover:bg-primary hover:text-white transition-all w-fit"
             >
-              Contact
+              <Globe size={16} />
+              {language === "fa" ? "EN" : "فا"}
             </button>
           </div>
         )}

@@ -1,11 +1,101 @@
+# پورتفولیو | نمونه‌کارها
 
-  # One-page project showcase
+وبسایت پورتفولیوی شخصی ساخته شده با React، TypeScript و Tailwind CSS.
+دارای پشتیبانی دوزبانه (فارسی / انگلیسی) با قابلیت RTL.
 
-  This is a code bundle for One-page project showcase. The original project is available at https://www.figma.com/design/CR7ufsxq937GuLwNwiEwp4/One-page-project-showcase.
+## اجرای پروژه
 
-  ## Running the code
+```bash
+npm install
+npm run dev
+```
 
-  Run `npm i` to install the dependencies.
+## ساختار پروژه‌ها
 
-  Run `npm run dev` to start the development server.
-  
+اطلاعات پروژه‌ها در **سه فایل** نگهداری می‌شود:
+
+| فایل | کاربرد |
+|------|--------|
+| `src/app/components/Projects.tsx` | داده‌های ثابت (تصویر، تگ‌ها، لینک‌ها، گرادیان) |
+| `src/app/i18n/fa.ts` | عنوان و توضیحات **فارسی** هر پروژه |
+| `src/app/i18n/en.ts` | عنوان و توضیحات **انگلیسی** هر پروژه |
+
+---
+
+## افزودن پروژه جدید
+
+### مرحله ۱ — داده‌های ثابت
+
+فایل `src/app/components/Projects.tsx` را باز کنید و یک آیتم جدید به آرایه `projectsData` اضافه کنید:
+
+```ts
+{
+  id: "my-new-project",            // یک شناسه یکتا (انگلیسی، بدون فاصله)
+  image: "https://...",            // آدرس تصویر پروژه
+  tags: ["React", "Node.js"],      // تگ‌های فنی
+  gradient: "from-primary/80 to-secondary/80",  // رنگ گرادیان روی تصویر
+  url: "https://example.com",      // لینک دموی پروژه (یا "#" اگر ندارید)
+  repo: "https://github.com/...",  // لینک مخزن گیت‌هاب (یا "#" اگر ندارید)
+},
+```
+
+### مرحله ۲ — متن فارسی
+
+فایل `src/app/i18n/fa.ts` را باز کنید. در بخش `projects.items` یک کلید جدید با همان `id` اضافه کنید:
+
+```ts
+"my-new-project": {
+  title: "عنوان پروژه به فارسی",
+  description: "توضیحات پروژه به فارسی.",
+},
+```
+
+### مرحله ۳ — متن انگلیسی
+
+فایل `src/app/i18n/en.ts` را باز کنید. در بخش `projects.items` همان کلید را اضافه کنید:
+
+```ts
+"my-new-project": {
+  title: "My New Project",
+  description: "Description of the project in English.",
+},
+```
+
+**مهم:** مقدار `id` در هر سه فایل باید دقیقاً یکسان باشد.
+
+---
+
+## ویرایش پروژه‌های موجود
+
+### تغییر عنوان یا توضیحات
+
+- برای فارسی: فایل `src/app/i18n/fa.ts` → بخش `projects.items` → کلید مورد نظر را ویرایش کنید
+- برای انگلیسی: فایل `src/app/i18n/en.ts` → بخش `projects.items` → کلید مورد نظر را ویرایش کنید
+
+### تغییر تصویر، تگ‌ها یا لینک‌ها
+
+فایل `src/app/components/Projects.tsx` → آرایه `projectsData` → آیتم مورد نظر را ویرایش کنید.
+
+### حذف پروژه
+
+آیتم مورد نظر را از `projectsData` در فایل `Projects.tsx` حذف کنید و کلید مربوطه را از هر دو فایل `fa.ts` و `en.ts` پاک کنید.
+
+---
+
+## شناسه‌های پروژه‌های فعلی
+
+| شناسه (id) | پروژه |
+|-------------|--------|
+| `modern-web` | پلتفرم وب مدرن |
+| `mobile-app` | توسعه اپلیکیشن موبایل |
+| `design-system` | سیستم طراحی خلاقانه |
+| `tech-hub` | مرکز نوآوری فناوری |
+| `dev-platform` | پلتفرم توسعه نرم‌افزار |
+| `ai-app` | اپلیکیشن هوش مصنوعی |
+
+---
+
+## تغییر زبان پیش‌فرض
+
+زبان پیش‌فرض فارسی است. کاربر با کلیک روی دکمه `EN` / `فا` در هدر سایت می‌تواند زبان را تغییر دهد.
+انتخاب زبان در مرورگر کاربر ذخیره می‌شود.
