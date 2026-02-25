@@ -4,58 +4,52 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const projectsData = [
   {
-    id: "Parsinoo",
-    image:
-      "https://images.unsplash.com/photo-1764601842171-3d6fba7c3830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzcxODc1NjM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
+    id: "modern-web",
+    image: "../Img/Parsinoo.png",
+    tags: ["Wordpress", "Elementor"],
     gradient: "from-primary/80 to-secondary/80",
-    url: "#",
+    url: "https://Parsinoo.ir",
     repo: "#",
   },
   {
     id: "mobile-app",
-    image:
-      "https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHNjcmVlbnxlbnwxfHx8fDE3NzE5MjM5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["React Native", "Firebase", "UI/UX"],
+    image: "../Img/esfahanplast.png",
+    tags: ["Wordpress", "Elementor"],
     gradient: "from-secondary/80 to-accent/80",
-    url: "#",
+    url: "https://esfahanplast.com",
     repo: "#",
   },
   {
     id: "design-system",
-    image:
-      "https://images.unsplash.com/photo-1756723903184-32fed816ea5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHdvcmtzcGFjZSUyMGNvbG9yZnVsfGVufDF8fHx8MTc3MTkyMTcyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Figma", "Design Tokens", "Documentation"],
+    image: "../Img/alafamasia.png",
+    tags: ["tailwind", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     gradient: "from-accent/80 to-primary/80",
-    url: "#",
+    url: "https://alafamasiacompany.ir",
     repo: "#",
   },
   {
     id: "tech-hub",
-    image:
-      "https://images.unsplash.com/photo-1573757056004-065ad36e2cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwaW5ub3ZhdGlvbiUyMGRpZ2l0YWx8ZW58MXx8fHwxNzcxOTIzNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Next.js", "Node.js", "PostgreSQL"],
+    image: "../Img/cobel.png",
+    tags: ["Wordpress", "Elementor"],
     gradient: "from-primary/80 via-accent/80 to-secondary/80",
-    url: "#",
+    url: "https://cobelcafe.ir",
     repo: "#",
   },
   {
     id: "dev-platform",
-    image:
-      "https://images.unsplash.com/photo-1672385245363-f4e7ed05a63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kaW5nJTIwbGFwdG9wfGVufDF8fHx8MTc3MTkzMDYwMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["WebSockets", "Redis", "Docker"],
+    image: "",
+    tags: ["PHP", "Laravel", "JavaScript", "CSS"],
     gradient: "from-secondary/80 to-primary/80",
     url: "#",
-    repo: "#",
+    repo: "https://github.com/SiavashNamjoo/Control-management",
   },
   {
     id: "ai-app",
-    image:
-      "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzE5MjA4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Python", "TensorFlow", "REST API"],
+    image: "",
+    tags: ["Python", "Node.js"],
     gradient: "from-accent/80 to-secondary/80",
     url: "#",
-    repo: "#",
+    repo: "https://github.com/SiavashNamjoo/webscrapper",
   },
 ];
 

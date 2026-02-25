@@ -19,28 +19,28 @@ export const en = {
     subtitle: "A collection of projects showcasing my expertise in web development, design, and innovation",
     items: {
       "modern-web": {
-        title: "Modern Web Platform",
-        description: "A responsive web application with cutting-edge UI/UX design and seamless user interactions.",
+        title: "Parsinoo",
+        description: "Parsinoo is a platform for news and articles. it has avdertiment on yekta net platform",
       },
       "mobile-app": {
-        title: "Mobile App Development",
-        description: "Cross-platform mobile application with intuitive navigation and stunning animations.",
+        title: "Esfahanplast",
+        description: "Esfahanplast is a showcase website for a company that sells plastic products.",
       },
       "design-system": {
-        title: "Creative Design System",
-        description: "Comprehensive design system with reusable components and design tokens for brand consistency.",
+        title: "alafamasiacompany",
+        description: "alafamasia company is a company that sells Industrial colors. this website have panel that writen with php that you can edit and add products.",
       },
       "tech-hub": {
-        title: "Tech Innovation Hub",
-        description: "Digital transformation project leveraging latest technologies for enterprise solutions.",
+        title: "CobelCafe",
+        description: "CobelCafe is a simple website for a cafe that sells coffee and snacks it has enamad and payment gateway.",
       },
       "dev-platform": {
-        title: "Software Development Platform",
-        description: "Collaborative coding environment with real-time features and integrated development tools.",
+        title: "Website Mangement",
+        description: "This is a exlusive project that can implement on any website you want. and you can control users, logos, contents and more.",
       },
       "ai-app": {
-        title: "AI-Powered Application",
-        description: "Machine learning integration with intelligent features and predictive analytics.",
+        title: "Webscraper",
+        description: "This project is a webscraper that scrapes data from a website and saves it to a database.its use for prices and email it to you",
       },
     },
   },
