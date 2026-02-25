@@ -1,3 +1,4 @@
+import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { useLanguage } from "../context/LanguageContext";
 
