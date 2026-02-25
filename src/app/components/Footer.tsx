@@ -1,3 +1,4 @@
+import React from "react";
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";

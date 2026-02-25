@@ -1,3 +1,4 @@
+import React from "react";
 import { Code2, Palette, Zap, Heart } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -36,11 +37,17 @@ export function About() {
                 key={skill.id}
                 className="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 group hover:scale-105"
               >
-                <div className={`w-14 h-14 rounded-lg bg-gradient-to-br ${skill.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div
+                  className={`w-14 h-14 rounded-lg bg-gradient-to-br ${skill.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                >
                   <Icon className="text-white" size={28} />
                 </div>
-                <h3 className="text-xl mb-2">{t(`about.skills.${skill.id}.title`)}</h3>
-                <p className="text-muted-foreground">{t(`about.skills.${skill.id}.description`)}</p>
+                <h3 className="text-xl mb-2">
+                  {t(`about.skills.${skill.id}.title`)}
+                </h3>
+                <p className="text-muted-foreground">
+                  {t(`about.skills.${skill.id}.description`)}
+                </p>
               </div>
             );
           })}
