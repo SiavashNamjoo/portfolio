@@ -1,3 +1,4 @@
+import React from "react";
 import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from "react";
 import { translations, languageConfig, type Language } from "../i18n";
 

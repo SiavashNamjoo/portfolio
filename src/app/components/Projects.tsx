@@ -4,7 +4,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const projectsData = [
   {
-    id: "modern-web",
+    id: "Parsinoo",
     image:
       "https://images.unsplash.com/photo-1764601842171-3d6fba7c3830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzcxODc1NjM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     tags: ["React", "TypeScript", "Tailwind CSS"],

@@ -21,7 +21,7 @@ export function About() {
               {t("about.badge")}
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl pb-8 font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             {t("about.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
